@@ -473,7 +473,9 @@ GameObject:
   - component: {fileID: 859936741}
   - component: {fileID: 859936740}
   - component: {fileID: 859936739}
-  - component: {fileID: 859936738}
+  - component: {fileID: 859936745}
+  - component: {fileID: 859936744}
+  - component: {fileID: 859936743}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -481,22 +483,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &859936738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 859936737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 094a08cf3d5a5f646b257fac2cf4ca73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 2
-  rotationSpeed: 45
-  growthSpeed: 1
-  initialScale: 1
 --- !u!65 &859936739
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -586,6 +572,46 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &859936743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859936737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2a3da4e5d48adb43b15ec52e2631b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 1
+  frequency: 1
+--- !u!114 &859936744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859936737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a96968cb2714b949adb490058eb47a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 30
+--- !u!114 &859936745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859936737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 027dee4ce8699ea47b3cf7e0904a4445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  growthSpeed: 0.5
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,9 +736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 027dee4ce8699ea47b3cf7e0904a4445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  growthSpeed: 0.1
-  maxSize: 5
-  initialSize: 1
+  growthSpeed: 0.5
 --- !u!136 &991086573
 CapsuleCollider:
   m_ObjectHideFlags: 0
